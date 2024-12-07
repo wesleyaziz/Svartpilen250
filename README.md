@@ -27,12 +27,14 @@ A responsive, modern website showcasing the Husqvarna Svartpilen 250 motorcycle.
 - OpenStreetMap
 
 ## Project Structure
+```
 ├── index.html
 ├── data/
-│ ├── css/
-│ │ ├── style.sass
-│ │ └── clash-display.css
-│ ├── js/
-│ │ └── main.js
-│ └── images/
+│   ├── css/
+│   │   ├── style.sass
+│   │   └── clash-display.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
 └── README.md
+```
