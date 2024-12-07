@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="data/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/6.13.0/ol.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>Husqvarna Svartpilen 250</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./data/images/logo.svg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#design">Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technical">Specifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chassis">Chassis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dealer">Dealer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#models">Models</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-brand ms-lg-3">Download</a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner section -->
+    <section id="banner" class="min-vh-100 d-flex pt-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="display-5 text-white">Svartpilen 250</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 h-100 d-flex justify-content-center align-items-end">
+              <div class="">
+                  <a href="#" class="btn btn-brand startBtn me-2">Get Started</a>
+                  <a href="#dealer" class="btn btn-light ms-2">Find A Dealer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                  <div class="section-title">
+                      <h1 class="display-4 fw-semibold">The Urban Explorer</h1>
+                      <div class="line"></div>
+                      <p>The Svartpilen 250 dominates urban streets with its powerful engine and lightweight chassis, offering agile handling for an exciting city ride. Its upright riding position provides confidence and a clear view of the road. The motorcycle’s distinctive dark design reflects the Swedish heritage of the brand.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center">
+              <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
+                  <img src="./data/images/banner2.jpg" alt="">
+              </div>
+              <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5">
+                  <h1>Features</h1>
+                  <p class="mt-3 mb-4"></p>
+                  <div class="d-flex pt-4 mb-3">
+                      <div class="iconbox me-4">
+                        <i class="ri-speed-up-fill"></i>
+                      </div>
+                      <div>
+                          <h5>Performance and Handling</h5>
+                          <p>Punchy new motor housed inside a lightweight chassis ensures reactive handling.</p>
+                      </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                      <div class="iconbox me-4">
+                          <i class="ri-user-5-fill"></i>
+                      </div>
+                      <div>
+                          <h5>Riding Comfort</h5>
+                          <p>Confidence-inspiring, upright riding position ensures a commanding view of the road.</p>
+                      </div>
+                  </div>
+                  <div class="d-flex">
+                      <div class="iconbox me-4">
+                        <i class="ri-quill-pen-fill"></i>
+                      </div>
+                      <div>
+                          <h5>Design and Brand Heritage</h5>
+                          <p>Dark and distinctive blend of colours reflects the Swedish heritage of the brand.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Design Details section -->
+    <section id="design" class="section-padding border-top">
+      <div class="container">
+          <div class="row">
+              <div class="box col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                  <div class="section-title">
+                      <h1 class="display-4 fw-semibold">Design Details</h1>
+                      <div class="line"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="row g-4 text-center">
+              <div class="box col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                  <div class="theme-shadow p-lg-4 p-4">
+                      <img src="./data/images/engine.jpg" alt="">
+                      <h5 class="mt-4 mb-3">Single Cylinder</h5>
+                  </div>
+              </div>
+              <div class="box col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                  <div class="theme-shadow p-lg-4 p-4">
+                      <img src="./data/images/easyshift.jpg" alt="">
+                      <h5 class="mt-4 mb-3">Easy Shift</h5>
+                  </div>
+              </div>
+              <div class="box col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                  <div class="theme-shadow p-lg-4 p-4">
+                      <img src="./data/images/reararm.jpg" alt="">
+                      <h5 class="mt-4 mb-3">Curved Swingarm</h5>
+                  </div>
+              </div>
+              <div class="box col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                  <div class="theme-shadow p-lg-4 p-4">
+                      <img src="./data/images/rearsuspension.jpg" alt="">
+                      <h5 class="mt-4 mb-3">WP Side-Mounted Suspension</h5>
+                  </div>
+              </div>
+              <div class="box col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
+                  <div class="theme-shadow p-lg-4 p-4">
+                      <img src="./data/images/tires.jpg" alt="">
+                      <h5 class="mt-4 mb-3">Knobby Off-Road Tires</h5>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                <div class="theme-shadow p-lg-4 p-4">
+                    <img src="./data/images/headlight.jpg" alt="">
+                    <h5 class="mt-4 mb-3">Ring-Shaped LED Light</h5>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Counter section -->
+    <section id="counter" class="section-padding border-top">
+      <div class="container text-center">
+          <div class="row g-4">
+              <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                  <h1 class="text-white display-4">249.1 c.c.</h1>
+                  <h6 class="text-uppercase mb-0 text-white mt-3">Displacement</h6>
+              </div>
+              <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                  <h1 class="text-white display-4">31 PS</h1>
+                  <h6 class="text-uppercase mb-0 text-white mt-3">Max Horse Power</h6>
+              </div>
+              <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                  <h1 class="text-white display-4">25 Nm</h1>
+                  <h6 class="text-uppercase mb-0 text-white mt-3">Max Torque</h6>
+              </div>
+              <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                  <h1 class="text-white display-4">154 kg</h1>
+                  <h6 class="text-uppercase mb-0 text-white mt-3">Weight (without fuel)</h6>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Technical Details section -->
+    <section id="technical" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Technical Details</h1>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" data-aos="fade-down" data-aos-delay="150">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active h5 px-3 py-3" id="engine-tab" data-bs-toggle="tab" data-bs-target="#engine" type="button" role="tab" aria-controls="engine" aria-selected="true">Engine Type</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link h5 px-3 py-3" id="chassis-tab" data-bs-toggle="tab" data-bs-target="#chassisdetail" type="button" role="tab" aria-controls="chassisdetail" aria-selected="false">Chassis Specifications</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link h5 px-3 py-3" id="size-tab" data-bs-toggle="tab" data-bs-target="#size" type="button" role="tab" aria-controls="size" aria-selected="false">Dimensions and Weight</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link h5 px-3 py-3" id="fuel-tab" data-bs-toggle="tab" data-bs-target="#fuel" type="button" role="tab" aria-controls="fuel" aria-selected="false">Fuel Consumption</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link h5 px-3 py-3" id="equipment-tab" data-bs-toggle="tab" data-bs-target="#equipment" type="button" role="tab" aria-controls="equipment" aria-selected="false">Other Equipment</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="engine" role="tabpanel"aria-labelledby="engine-tab">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Transmission</th>
+                                        <td class="align-middle">6-speed</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Cooling</th>
+                                        <td class="align-middle">Liquid cooled</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Design</th>
+                                        <td class="align-middle">1-cylinder, 4-stroke engine</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Displacement</th>
+                                        <td class="align-middle">249 c.c.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Bore and Stroke</th>
+                                        <td class="align-middle">72 x 61.2 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Compression ratio</th>
+                                        <td class="align-middle">12.4</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Clutch</th>
+                                        <td class="align-middle">PASC™ antihopping clutch, mechanically operated</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">EMS</th>
+                                        <td class="align-middle">Bosch EMS with RBW</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Starter</th>
+                                        <td class="align-middle">Electric starter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Max Horse Power</th>
+                                        <td class="align-middle">31 PS</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Max Torque</th>
+                                        <td class="align-middle">25 Nm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="chassisdetail" role="tabpanel" aria-labelledby="chassis-tab">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Wheels</th>
+                                        <td class="align-middle">Spoked wheels with aluminium rims</td>
+                                    </tr>   
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Front wheel size</th>
+                                        <td class="align-middle">3.0 x 17"</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Rear wheel size</th>
+                                        <td class="align-middle">4.0 x 17"</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Front tire size</th>
+                                        <td class="align-middle">110/70 R17</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Rear tire size</th>
+                                        <td class="align-middle">150/60 R17</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Suspension travel (front)</th>
+                                        <td class="align-middle">150 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Suspension travel (rear)</th>
+                                        <td class="align-middle">150 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Front brake disc diameter</th>
+                                        <td class="align-middle">320 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Rear brake disc diameter</th>
+                                        <td class="align-middle">240 mm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="size" role="tabpanel" aria-labelledby="size-tab">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Seat height</th>
+                                        <td class="align-middle">820 mm</td>
+                                    </tr>   
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Ground clearance</th>
+                                        <td class="align-middle">180 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Wheelbase</th>
+                                        <td class="align-middle">1368 +/-15.5 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Weight (without fuel)</th>
+                                        <td class="align-middle">154 Kg</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Tank capacity (approx.)</th>
+                                        <td class="align-middle">13 L</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="fuel" role="tabpanel" aria-labelledby="fuel-tab">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Constant Speed Fuel Consumption</th>
+                                        <td class="align-middle">52.28 km/L</td>
+                                    </tr>   
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Urban Fuel Consumption</th>
+                                        <td class="align-middle">29.01 km/L</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Test Value</th>
+                                        <td class="align-middle">35.3 km/L</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Energy Efficiency Class</th>
+                                        <td class="align-middle">level 3</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Lubrication</th>
+                                        <td class="align-middle">Forced oil lubrication with 2 oil pumps</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">CO2 emissions</th>
+                                        <td class="align-middle">63.5 g/km</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">ABS</th>
+                                        <td class="align-middle">Bosch 9.3 MP (with cornering ABS and SUPERMOTO ABS)</td>
+                                    </tr>   
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Front brake</th>
+                                        <td class="align-middle">ByBre, opposed four-piston caliper, brake disc</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Chain</th>
+                                        <td class="align-middle">3520 X-Ring</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Frame design</th>
+                                        <td class="align-middle">Steel trellis frame, powder coated</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Handlebar</th>
+                                        <td class="align-middle">Steel, tapered Ø 26/22 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Silencer</th>
+                                        <td class="align-middle">Stainless steel silencer with regulated catalytic converter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Steering head angle</th>
+                                        <td class="align-middle">66 °</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Rear subframe design</th>
+                                        <td class="align-middle">Steel trellis frame, powder coated</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-3 py-3">Lights</th>
+                                        <td class="align-middle">LED</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- Chassis Details section -->
+    <section id="chassis" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Chassis Details</h1>
+                        <div class="line"></div>
+                        <p>A unique appearance is created through the authentic mix of both classic and modern design. Lightweight and narrow bodywork curves tightly around the chassis enabling seamless rider movements while the machine's dark demeanour, rugged tyres, and protective parts like the flyscreen and skid plate ensure the Svartpilen 250 has an undeniably distinctive look.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="chassis-item image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/bikesprite1.jpg" alt="">
+                        </div>
+                        <a href="./data/images/bikesprite1.jpg" data-fancybox="gallery" class="iconbox" target="_blank">
+                            <i class="ri-search-2-line"></i>
+                        </a>
+                    </div>
+                    <div class="chassis-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/bikesprite2.jpg" alt="">
+                        </div>
+                        <a href="./data/images/bikesprite2.jpg" data-fancybox="gallery" class="iconbox" target="_blank"><i class="ri-search-2-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="chassis-item image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/bikesprite3.jpg" alt="">
+                        </div>
+                        <a href="./data/images/bikesprite3.jpg" data-fancybox="gallery" class="iconbox" target="_blank"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="chassis-item image-zoom mt-4" target="_blank">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/bikesprite4.jpg" alt="">
+                        </div>
+                        <a href="./data/images/bikesprite4.jpg" data-fancybox="gallery" class="iconbox" target="_blank"><i class="ri-search-2-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                    <div class="chassis-item image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/bikesprite5.jpg" alt="">
+                        </div>
+                        <a href="./data/images/bikesprite5.jpg" data-fancybox="gallery" class="iconbox" target="_blank"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="chassis-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/bikesprite6.jpg" alt="">
+                        </div>
+                        <a href="./data/images/bikesprite6.jpg" data-fancybox="gallery" class="iconbox" target="_blank"><i class="ri-search-2-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider section -->
+    <section id="slider">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 justify-content-center " data-aos="fade-down" data-aos-delay="150">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner" >
+                          <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./data/images/banner1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./data/images/banner2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./data/images/banner3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./data/images/banner4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./data/images/banner5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dealer section -->
+    <section id="dealer" class="section-padding bg-light mt-5">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-12 col-lg-6 text-center ai" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Find a dealer</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white">Find your nearest Husqvarna Motorcycles dealer.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-down" data-aos-delay="250">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--other models section -->
+    <section id="models" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Other Models</h1>
+                        <div class="line"></div>
+                        <h4>Svartpilen －The dark street explorer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center ">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="models-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/125.png" alt="">
+                        </div>
+                        <div class="models-member-content">
+                            <h4 class="text-white">Svartpilen 125</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="models-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/401.png" alt="">
+                        </div>
+                        <div class="models-member-content">
+                            <h4 class="text-white">Svartpilen 401</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                    <div class="models-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./data/images/801.png" alt="">
+                        </div>
+                        <div class="models-member-content">
+                            <h4 class="text-white">Svartpilen 801</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">ABOUT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>The brand</li>
+                            <li>Services</li>
+                            <li>Company</li>
+                            <li>Careers</li>
+                            <li>Procurement</li>
+                            <li>Press Center</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">SERVICES</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Mobility Service</li>
+                            <li>Owner Manuals</li>
+                            <li>Technical Details</li>
+                            <li>Chassis</li>
+                            <li>Find a dealer</li>
+                            <li>Other Models</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">CONTACT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Sweden</li>
+                            <li>+123 456 7890</li>
+                            <li>www.example.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">Follow Us</h5>
+                        <div class="line"></div>
+                        <div class="social-icons">
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                            <a href="#"><i class="ri-dribbble-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© 2024 Wesley Wong Website Design - Educational Practice Project</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Images Copyright © Husqvarna Motorcycles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- back to top button -->
+    <a href="#" id="toTopBtn" class="toTopBtn d-flex justify-content-center align-items-center">
+        <i class="ri-arrow-up-double-fill"></i>
+    </a>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="data/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.4.0/dist/ol.js"></script>
+  </body>
+</html>
