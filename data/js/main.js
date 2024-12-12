@@ -25,7 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
         mirror: false,
         anchorPlacement: 'top-bottom',
     })
-    
+
+    document.querySelector('#tabSelect').addEventListener('change', function(e) {
+        const selectedValue = e.target.value
+        const tabContent = document.getElementById(selectedValue)
+        
+        document.querySelectorAll('.tab-pane').forEach(pane => {
+            pane.classList.remove('show', 'active')
+        })
+        
+        tabContent.classList.add('show', 'active')
+    });
+    // dealer map
     const map = L.map('map').setView([57.78828501578254, 14.280658571178456], 15)
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

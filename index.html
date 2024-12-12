@@ -58,9 +58,9 @@
         </div>
         <div class="row">
             <div class="col-12 h-100 d-flex justify-content-center align-items-end">
-              <div class="">
-                  <a href="#" class="btn btn-brand startBtn me-2">Get Started</a>
-                  <a href="#dealer" class="btn btn-light ms-2">Find A Dealer</a>
+              <div class="d-flex flex-wrap justify-content-center align-items-center">
+                  <a href="#" class="btn btn-brand startBtn ">Get Started</a>
+                  <a href="#dealer" class="btn btn-light">Find A Dealer</a>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@
             </div>
             <div class="row">
                 <div class="col-12" data-aos="fade-down" data-aos-delay="150">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs d-none d-lg-flex" id="tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active h5 px-3 py-3" id="engine-tab" data-bs-toggle="tab" data-bs-target="#engine" type="button" role="tab" aria-controls="engine" aria-selected="true">Engine Type</button>
                         </li>
@@ -221,7 +221,14 @@
                             <button class="nav-link h5 px-3 py-3" id="equipment-tab" data-bs-toggle="tab" data-bs-target="#equipment" type="button" role="tab" aria-controls="equipment" aria-selected="false">Other Equipment</button>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+                    <select class="form-select d-lg-none mb-3 " id="tabSelect">
+                        <option value="engine">Engine Type</option>
+                        <option value="chassisdetail">Chassis Specifications</option>
+                        <option value="size">Dimensions and Weight</option>
+                        <option value="fuel">Fuel Consumption</option>
+                        <option value="equipment">Other Equipment</option>
+                    </select>
+                    <div class="tab-content" id="tabContent">
                         <div class="tab-pane fade show active" id="engine" role="tabpanel"aria-labelledby="engine-tab">
                             <table class="table table-hover">
                                 <tbody>

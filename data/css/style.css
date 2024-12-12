@@ -136,6 +136,9 @@ img {
 #banner .container .row h3 {
   font-size: xx-large;
 }
+#banner .btn {
+  width: 180px;
+}
 
 .iconbox {
   width: 70px;
@@ -162,6 +165,10 @@ img {
 }
 #technical th {
   color: rgb(0, 57, 133);
+}
+
+.form-select {
+  font-size: 1.2rem;
 }
 
 /* PORTFOLIO */
